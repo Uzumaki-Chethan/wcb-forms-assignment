@@ -1,0 +1,142 @@
+.page-header {
+  height: var(--header-h);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 5mm;
+  margin-bottom: 4mm;
+  border-bottom: .75pt solid #ccc;
+}
+
+.brand-block {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.wcb-logo {
+  width: 64mm;
+  height: auto;
+  display: block;
+}
+
+.org-address {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 7.7pt;
+  color: var(--muted);
+  line-height: 1.4;
+  margin-top: 2mm;
+}
+
+.doc-title-block {
+  text-align: right;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.doc-title-block h1 {
+  font-size: 13.5pt;
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.claim-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1pt solid var(--ink);
+  padding: 4px 8px;
+  font-size: 9pt;
+  font-weight: 600;
+}
+
+.intro-line {
+  margin: 2px 0 8px;
+}
+
+.form-input {
+  font: inherit;
+  color: var(--field-blue);
+  background: #fff;
+  border: 0;
+  border-bottom: .6pt solid #9aa;
+  outline: none;
+  min-width: 45px;
+  padding: 1px 2px;
+}
+
+.intro-line .form-input {
+  width: 42mm;
+}
+
+.claim-box .form-input {
+  width: 27mm;
+  font-weight: 700;
+}
+
+.data-table .form-input {
+  width: 100%;
+  min-width: 0;
+  font-size: 8.5pt;
+}
+
+.add-row {
+  margin: 2px 0 7px;
+  padding: 3px 8px;
+  border: 1px solid #aaa;
+  background: #f6f6f6;
+  border-radius: 3px;
+  cursor: pointer;
+  font: 8pt "Segoe UI", Arial, sans-serif;
+}
+
+.add-row:hover {
+  background: #eaeaea;
+}
+
+.mileage-note,
+.taxi-note {
+  font-size: 8.7pt;
+  margin: 3px 0 5px;
+}
+
+.privacy-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 9pt;
+  margin-top: 8px;
+}
+
+.privacy-line input {
+  margin-top: 2px;
+}
+
+.continuation-title {
+  margin-top: 0;
+}
+
+.continuation-title span {
+  color: var(--field-blue);
+}
+
+.continuation-title em {
+  font-size: 8.5pt;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+@media print {
+  .add-row {
+    display: none !important;
+  }
+
+  .form-input {
+    border: 0;
+    background: transparent;
+  }
+
+  .wcb-logo {
+    width: 64mm;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worker Progress Report &mdash; Diona Assignment</title>
+<link rel="stylesheet" href="../shared/page.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="doc-body">
+
+  <div class="toolbar no-print">
+    <strong>Dataset:</strong>
+
+    <div class="group">
+      <button data-dataset="standard" class="active">
+        Standard (matches source PDF)
+      </button>
+
+      <button data-dataset="minimal">
+        Minimal (Form)
+      </button>
+
+      <button data-dataset="detailed">
+        Detailed (long answers, forces extra pages)
+      </button>
+    </div>
+
+    <div class="spacer"></div>
+
+    <span id="page-count-hint" class="hint"></span>
+
+    <button id="print-btn">
+      Print / Save as PDF
+    </button>
+  </div>
+
+  <div id="pages-root"></div>
+
+  <script src="../shared/paginate.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
